@@ -1,7 +1,7 @@
 +Use ICTchat service for online playing game (google app engine)
 +Objective-C Cocoa frame work for programing User Interface
 +Game logic is handle on iPhone not server.
-             === Service Describe ===
+             == Service Describe ==
 Every data is stored as a message at a specific room.
 Each data is called an Entry and has some properties such as: User, Date, Text, Tag
 We use service by requesting a number of Entries from a specific room (identify by room name)
@@ -9,7 +9,7 @@ Or send an Entry to a specific room.
 
 +We use service by store data of a Caro Game step by step, each step is an Entry. When request to server, we get list of all previous step. Use this to represent current state of Caro table. To make a step, send an Entry to server, when opposite player request, he will see that changes.
 +So, all data of every game are stored online and be kept like a message. A game can be replay if user want to watch (paid user). To make game play actively and fast, Player need to request to server at least 1 time / 10s (can change in setting)
-             === Data Handle ===
+             == Data Handle ==
 +Server list are stored at a room called: ServersData
 +Using server’s name as name space for Lobby room:
 -Game Lobby has name format like this: (serverName)GameLobby
@@ -25,49 +25,48 @@ That mean , Player who play X side has make a step at coordinate (10,10) , id us
 <tag=Chat><name=TVA><text=Chao moi nguoi>
 Player name TVA say “Chao moi nguoi” to any body who request that Entry message
 
-             === User Interface ===
+             == User Interface ==
 Navigation Bar: Appear the whole game.
 +No back title, (let toolbar handle back)
 +Right and left to show status of each lv such as: (num of table, current side, …)
-Lv0:   Login or set chat name + Game information
-*Login is not available yet so currently User only use name chat instead.
+===Lv0:   Login or set chat name + Game information===
+Login is not available yet so currently User only use name chat instead.
 +Set chat name:
-- Simple interface with one  TextField Input + 1 Button
-- chat name is not required so User may leave it blank.
+  - Simple interface with one  TextField Input + 1 Button
+  - chat name is not required so User may leave it blank.
 +Game information: (Hide/show in Toolbar)
--Should use WebView and load html content store offline on iPhone.
+  -Should use WebView and load html content store offline on iPhone.
 
-Lv1: Choose server and notification about update or game changes.
+===Lv1: Choose server and notification about update or game changes.===
 +Server choose:
--After get list server from service, represented to a simple TableView then user click to choose.
+  -After get list server from service, represented to a simple TableView then user click to choose.
 (list server can store offline but Apple Market is not quite easy to update version so, store online seem better solution)
 +Notification: (Hide/show in Toolbar)
--Use WebView and load online content about Game notification, changes, update, … at a specific url. So when we want to notify to user, we change that html file.
+  -Use WebView and load online content about Game notification, changes, update, … at a specific url. So when we want to notify to user, we change that html file.
 
-Lv2: Game lobby (choose table, and chat to all player at a same server)
+===Lv2: Game lobby (choose table, and chat to all player at a same server)===
 
 +Choose table:
--A TableView for choosing table.
--List of table is sorted by date of create or renew. (top first)
+  -A TableView for choosing table.
+  -List of table is sorted by date of create or renew. (top first)
 
 +Chat:
--Message View
+  -Message View
 
 +Toolbar:
--Hide chat, setting, back to server choose, v.v
--Should be a kind of menu toolbar for full feature
+  -Hide chat, setting, back to server choose, v.v
+  -Should be a kind of menu toolbar for full feature
 
-Lv3: Game play (game board, and chat to opposite player)
+===Lv3: Game play (game board, and chat to opposite player)===
 
 +Game board:
--UIView with each cell as an image
--Special effect on last step
--Dragable
+  -UIView with each cell as an image
+  -Special effect on last step
+  -Dragable
 
 +Chat:
--Message View but should be hidden by default
+  -Message View but should be hidden by default
 
 +Toolbar:
--Hide/unhide chat, notify when receive message, quit game, new game, ...
--Should be a kind of menu toolbar for full feature
-
+  -Hide/unhide chat, notify when receive message, quit game, new game, ...
+  -Should be a kind of menu toolbar for full feature
