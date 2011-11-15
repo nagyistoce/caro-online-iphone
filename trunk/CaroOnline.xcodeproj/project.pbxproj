@@ -1,0 +1,380 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B1C56D1A146FCB0500A04BD4 /* CaroGameLogic.mm in Sources */ = {isa = PBXBuildFile; fileRef = B1C56D19146FCB0500A04BD4 /* CaroGameLogic.mm */; };
+		B1C56D20146FF57E00A04BD4 /* CaroOfflineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1C56D1F146FF57D00A04BD4 /* CaroOfflineViewController.m */; };
+		B1C56D24147002BF00A04BD4 /* O_White.png in Resources */ = {isa = PBXBuildFile; fileRef = B1C56D21147002BE00A04BD4 /* O_White.png */; };
+		B1C56D25147002BF00A04BD4 /* X_Black.png in Resources */ = {isa = PBXBuildFile; fileRef = B1C56D22147002BF00A04BD4 /* X_Black.png */; };
+		B1C56D26147002BF00A04BD4 /* Board20x20.png in Resources */ = {isa = PBXBuildFile; fileRef = B1C56D23147002BF00A04BD4 /* Board20x20.png */; };
+		B1C56D2A14701ED300A04BD4 /* CaroOnlineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1C56D2914701ED200A04BD4 /* CaroOnlineViewController.m */; };
+		B1C56D2D14701F4C00A04BD4 /* ICTchatConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = B1C56D2C14701F4C00A04BD4 /* ICTchatConnection.m */; };
+		B1C83224146F8FCB0043639A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1C83223146F8FCB0043639A /* UIKit.framework */; };
+		B1C83226146F8FCB0043639A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1C83225146F8FCB0043639A /* Foundation.framework */; };
+		B1C83228146F8FCB0043639A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1C83227146F8FCB0043639A /* CoreGraphics.framework */; };
+		B1C8322E146F8FCB0043639A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B1C8322C146F8FCB0043639A /* InfoPlist.strings */; };
+		B1C83230146F8FCB0043639A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B1C8322F146F8FCB0043639A /* main.m */; };
+		B1C83234146F8FCB0043639A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B1C83233146F8FCB0043639A /* AppDelegate.m */; };
+		B1C83237146F8FCB0043639A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1C83236146F8FCB0043639A /* ViewController.m */; };
+		B1C8323A146F8FCB0043639A /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B1C83238146F8FCB0043639A /* ViewController.xib */; };
+		B1C83242146F92BC0043639A /* TouchImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = B1C83241146F92BB0043639A /* TouchImageView.m */; };
+		B1C83245146F93CD0043639A /* DataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = B1C83244146F93CD0043639A /* DataSource.m */; };
+		B1C8324A146F96F00043639A /* CaroBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = B1C83249146F96F00043639A /* CaroBoard.m */; };
+		B1CDCAFE14715FFE001A1691 /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = B1CDCAFD14715FFE001A1691 /* back.png */; };
+		B1CDCB0114716009001A1691 /* chat.png in Resources */ = {isa = PBXBuildFile; fileRef = B1CDCB0014716009001A1691 /* chat.png */; };
+		B1CDCB0414716092001A1691 /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1CDCB0314716092001A1691 /* GameViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B1C56D18146FCB0500A04BD4 /* CaroGameLogic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CaroGameLogic.h; sourceTree = "<group>"; };
+		B1C56D19146FCB0500A04BD4 /* CaroGameLogic.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CaroGameLogic.mm; sourceTree = "<group>"; };
+		B1C56D1E146FF57D00A04BD4 /* CaroOfflineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CaroOfflineViewController.h; sourceTree = "<group>"; };
+		B1C56D1F146FF57D00A04BD4 /* CaroOfflineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CaroOfflineViewController.m; sourceTree = "<group>"; };
+		B1C56D21147002BE00A04BD4 /* O_White.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = O_White.png; sourceTree = "<group>"; };
+		B1C56D22147002BF00A04BD4 /* X_Black.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = X_Black.png; sourceTree = "<group>"; };
+		B1C56D23147002BF00A04BD4 /* Board20x20.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Board20x20.png; sourceTree = "<group>"; };
+		B1C56D2814701ED200A04BD4 /* CaroOnlineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CaroOnlineViewController.h; sourceTree = "<group>"; };
+		B1C56D2914701ED200A04BD4 /* CaroOnlineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CaroOnlineViewController.m; sourceTree = "<group>"; };
+		B1C56D2B14701F4C00A04BD4 /* ICTchatConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ICTchatConnection.h; path = ../../Net/ICTchatConnection.h; sourceTree = "<group>"; };
+		B1C56D2C14701F4C00A04BD4 /* ICTchatConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ICTchatConnection.m; path = ../../Net/ICTchatConnection.m; sourceTree = "<group>"; };
+		B1C8321F146F8FCB0043639A /* CaroOnline.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CaroOnline.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1C83223146F8FCB0043639A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		B1C83225146F8FCB0043639A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B1C83227146F8FCB0043639A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		B1C8322B146F8FCB0043639A /* CaroOnline-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CaroOnline-Info.plist"; sourceTree = "<group>"; };
+		B1C8322D146F8FCB0043639A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B1C8322F146F8FCB0043639A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B1C83231146F8FCB0043639A /* CaroOnline-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CaroOnline-Prefix.pch"; sourceTree = "<group>"; };
+		B1C83232146F8FCB0043639A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B1C83233146F8FCB0043639A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B1C83235146F8FCB0043639A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		B1C83236146F8FCB0043639A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		B1C83239146F8FCB0043639A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		B1C83240146F92BB0043639A /* TouchImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchImageView.h; sourceTree = "<group>"; };
+		B1C83241146F92BB0043639A /* TouchImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TouchImageView.m; sourceTree = "<group>"; };
+		B1C83243146F93CD0043639A /* DataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DataSource.h; path = ../../String_Image_Data/DataSource.h; sourceTree = "<group>"; };
+		B1C83244146F93CD0043639A /* DataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DataSource.m; path = ../../String_Image_Data/DataSource.m; sourceTree = "<group>"; };
+		B1C83248146F96F00043639A /* CaroBoard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CaroBoard.h; sourceTree = "<group>"; };
+		B1C83249146F96F00043639A /* CaroBoard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CaroBoard.m; sourceTree = "<group>"; };
+		B1CDCAFD14715FFE001A1691 /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.png; sourceTree = "<group>"; };
+		B1CDCB0014716009001A1691 /* chat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chat.png; sourceTree = "<group>"; };
+		B1CDCB0214716092001A1691 /* GameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
+		B1CDCB0314716092001A1691 /* GameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B1C8321C146F8FCB0043639A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1C83224146F8FCB0043639A /* UIKit.framework in Frameworks */,
+				B1C83226146F8FCB0043639A /* Foundation.framework in Frameworks */,
+				B1C83228146F8FCB0043639A /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B1C56D17146FCA3E00A04BD4 /* CaroGame */ = {
+			isa = PBXGroup;
+			children = (
+				B1C83248146F96F00043639A /* CaroBoard.h */,
+				B1C83249146F96F00043639A /* CaroBoard.m */,
+				B1C56D18146FCB0500A04BD4 /* CaroGameLogic.h */,
+				B1C56D19146FCB0500A04BD4 /* CaroGameLogic.mm */,
+				B1C56D1E146FF57D00A04BD4 /* CaroOfflineViewController.h */,
+				B1C56D1F146FF57D00A04BD4 /* CaroOfflineViewController.m */,
+				B1C56D2814701ED200A04BD4 /* CaroOnlineViewController.h */,
+				B1C56D2914701ED200A04BD4 /* CaroOnlineViewController.m */,
+			);
+			name = CaroGame;
+			sourceTree = "<group>";
+		};
+		B1C56D27147002C500A04BD4 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				B1CDCAFD14715FFE001A1691 /* back.png */,
+				B1CDCB0014716009001A1691 /* chat.png */,
+				B1C56D21147002BE00A04BD4 /* O_White.png */,
+				B1C56D22147002BF00A04BD4 /* X_Black.png */,
+				B1C56D23147002BF00A04BD4 /* Board20x20.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		B1C83214146F8FCA0043639A = {
+			isa = PBXGroup;
+			children = (
+				B1C83229146F8FCB0043639A /* CaroOnline */,
+				B1C83222146F8FCB0043639A /* Frameworks */,
+				B1C83220146F8FCB0043639A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B1C83220146F8FCB0043639A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B1C8321F146F8FCB0043639A /* CaroOnline.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B1C83222146F8FCB0043639A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B1C83223146F8FCB0043639A /* UIKit.framework */,
+				B1C83225146F8FCB0043639A /* Foundation.framework */,
+				B1C83227146F8FCB0043639A /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B1C83229146F8FCB0043639A /* CaroOnline */ = {
+			isa = PBXGroup;
+			children = (
+				B1C56D27147002C500A04BD4 /* Images */,
+				B1C83232146F8FCB0043639A /* AppDelegate.h */,
+				B1C83233146F8FCB0043639A /* AppDelegate.m */,
+				B1C83235146F8FCB0043639A /* ViewController.h */,
+				B1C83236146F8FCB0043639A /* ViewController.m */,
+				B1C83238146F8FCB0043639A /* ViewController.xib */,
+				B1C8322A146F8FCB0043639A /* Supporting Files */,
+				B1CDCB0214716092001A1691 /* GameViewController.h */,
+				B1CDCB0314716092001A1691 /* GameViewController.m */,
+				B1C56D17146FCA3E00A04BD4 /* CaroGame */,
+				B1C83246146F93DD0043639A /* Libs */,
+				B1C83247146F96830043639A /* Sample */,
+			);
+			path = CaroOnline;
+			sourceTree = "<group>";
+		};
+		B1C8322A146F8FCB0043639A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B1C8322B146F8FCB0043639A /* CaroOnline-Info.plist */,
+				B1C8322C146F8FCB0043639A /* InfoPlist.strings */,
+				B1C8322F146F8FCB0043639A /* main.m */,
+				B1C83231146F8FCB0043639A /* CaroOnline-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B1C83246146F93DD0043639A /* Libs */ = {
+			isa = PBXGroup;
+			children = (
+				B1C56D2B14701F4C00A04BD4 /* ICTchatConnection.h */,
+				B1C56D2C14701F4C00A04BD4 /* ICTchatConnection.m */,
+				B1C83243146F93CD0043639A /* DataSource.h */,
+				B1C83244146F93CD0043639A /* DataSource.m */,
+			);
+			name = Libs;
+			sourceTree = "<group>";
+		};
+		B1C83247146F96830043639A /* Sample */ = {
+			isa = PBXGroup;
+			children = (
+				B1C83240146F92BB0043639A /* TouchImageView.h */,
+				B1C83241146F92BB0043639A /* TouchImageView.m */,
+			);
+			name = Sample;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B1C8321E146F8FCB0043639A /* CaroOnline */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B1C8323D146F8FCB0043639A /* Build configuration list for PBXNativeTarget "CaroOnline" */;
+			buildPhases = (
+				B1C8321B146F8FCB0043639A /* Sources */,
+				B1C8321C146F8FCB0043639A /* Frameworks */,
+				B1C8321D146F8FCB0043639A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CaroOnline;
+			productName = CaroOnline;
+			productReference = B1C8321F146F8FCB0043639A /* CaroOnline.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B1C83216146F8FCA0043639A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = B1C83219146F8FCA0043639A /* Build configuration list for PBXProject "CaroOnline" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = B1C83214146F8FCA0043639A;
+			productRefGroup = B1C83220146F8FCB0043639A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B1C8321E146F8FCB0043639A /* CaroOnline */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B1C8321D146F8FCB0043639A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1C8322E146F8FCB0043639A /* InfoPlist.strings in Resources */,
+				B1C8323A146F8FCB0043639A /* ViewController.xib in Resources */,
+				B1C56D24147002BF00A04BD4 /* O_White.png in Resources */,
+				B1C56D25147002BF00A04BD4 /* X_Black.png in Resources */,
+				B1C56D26147002BF00A04BD4 /* Board20x20.png in Resources */,
+				B1CDCAFE14715FFE001A1691 /* back.png in Resources */,
+				B1CDCB0114716009001A1691 /* chat.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B1C8321B146F8FCB0043639A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1C83230146F8FCB0043639A /* main.m in Sources */,
+				B1C83234146F8FCB0043639A /* AppDelegate.m in Sources */,
+				B1C83237146F8FCB0043639A /* ViewController.m in Sources */,
+				B1C83242146F92BC0043639A /* TouchImageView.m in Sources */,
+				B1C83245146F93CD0043639A /* DataSource.m in Sources */,
+				B1C8324A146F96F00043639A /* CaroBoard.m in Sources */,
+				B1C56D1A146FCB0500A04BD4 /* CaroGameLogic.mm in Sources */,
+				B1C56D20146FF57E00A04BD4 /* CaroOfflineViewController.m in Sources */,
+				B1C56D2A14701ED300A04BD4 /* CaroOnlineViewController.m in Sources */,
+				B1C56D2D14701F4C00A04BD4 /* ICTchatConnection.m in Sources */,
+				B1CDCB0414716092001A1691 /* GameViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B1C8322C146F8FCB0043639A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B1C8322D146F8FCB0043639A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		B1C83238146F8FCB0043639A /* ViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B1C83239146F8FCB0043639A /* en */,
+			);
+			name = ViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B1C8323B146F8FCB0043639A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B1C8323C146F8FCB0043639A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B1C8323E146F8FCB0043639A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CaroOnline/CaroOnline-Prefix.pch";
+				INFOPLIST_FILE = "CaroOnline/CaroOnline-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		B1C8323F146F8FCB0043639A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CaroOnline/CaroOnline-Prefix.pch";
+				INFOPLIST_FILE = "CaroOnline/CaroOnline-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B1C83219146F8FCA0043639A /* Build configuration list for PBXProject "CaroOnline" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B1C8323B146F8FCB0043639A /* Debug */,
+				B1C8323C146F8FCB0043639A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B1C8323D146F8FCB0043639A /* Build configuration list for PBXNativeTarget "CaroOnline" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B1C8323E146F8FCB0043639A /* Debug */,
+				B1C8323F146F8FCB0043639A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B1C83216146F8FCA0043639A /* Project object */;
+}
