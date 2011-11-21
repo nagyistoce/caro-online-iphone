@@ -19,11 +19,15 @@ static int CellSize=40;
 static float OffSetX=0;
 static float OffSetY=0;
 
+static float boundOffSetX=0;
+static float boundOffSetY=-44;
+
+
 /** Distance determine whether user  make a click or want to drag.
  */
 static float clickBound=15;
 
-@synthesize dragable;
+@synthesize dragable,delegate;
 
 /** Init Touchable Image View with an image
  *	
@@ -50,14 +54,13 @@ static float clickBound=15;
 -(void) dealloc{
 	//deallocating here
 	
-	for (UIView* cell in [table allValues]) {
-		[cell release];
-	}
 	[table release];
 	table = nil;
 	
+	delegate=nil;
+	
 	[super dealloc];	
-	NSLog(@"Caro Table realeased!");
+	NSLog(@"CaroBoard dealloc!");
 }
 
 /** Add SubView at Location
@@ -83,7 +86,6 @@ static float clickBound=15;
 	if (subview != nil) {
 		[table removeObjectForKey:[NSString stringWithFormat:@"(%d,%d)",(int)point.x,(int)point.y]];
 		[subview removeFromSuperview];
-		//[subview release];
 	}else{
 		NSLog(@"Remove Failed! Subview at %d,%d not excit",column,row);
 	}
@@ -115,7 +117,7 @@ static float clickBound=15;
 	//[[self superview] bringSubviewToFront:self];
 }
 
-/** As the user drags, move the flower with the touch 
+/** As the user drags, move the view with the touch 
  *
  */
 - (void) touchesMoved:(NSSet*)touches withEvent:(UIEvent*)event{
@@ -127,6 +129,10 @@ static float clickBound=15;
 		CGRect frame = [self frame];
 		frame.origin.x += pt.x - startLocation.x;
 		frame.origin.y += pt.y - startLocation.y;
+		//Fix drag out bound
+		if(frame.origin.x>0 || frame.origin.x+self.frame.size.width<self.superview.frame.size.width+boundOffSetX)frame.origin.x -= pt.x - startLocation.x;
+		if(frame.origin.y>0 || frame.origin.y+self.frame.size.height<self.superview.frame.size.height+boundOffSetY)frame.origin.y -= pt.y - startLocation.y;
+		
 		[self setFrame:frame];
 	}
 	

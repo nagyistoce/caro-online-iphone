@@ -7,10 +7,19 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "TouchImageView.h"
+#import "CaroBoard.h"
+#import "DataSource.h"
+#import "CaroGameLogic.h"
+#import "CaroOfflineViewController.h"
+#import "CaroOnlineViewController.h"
 #import "GameViewController.h"
+#import "LobbyViewController.h"
+#import "ChatViewController.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <UIAlertViewDelegate>
 
 @property (nonatomic,retain)GameViewController * testGame ;
+@property (nonatomic,retain)LobbyViewController * testLobby ;
 
 @end

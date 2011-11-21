@@ -36,7 +36,7 @@ int checkBoard(int i,int j);
 
 -(void) dealloc{
 	//deallocating here
-	
+	NSLog(@"CaroGameLogic dealloc!");
 	[super dealloc];	
 }
 
@@ -119,8 +119,8 @@ int checkBoard(int x,int y){
 	if (gameEnd == true) {
 		NSLog(@"This game has end! Make a new Game");
 		return -1;
-	}else if (lastPlayer == p){
-		NSLog(@"Player %d is not allowed to make another step before others!",p);
+	}else if (lastPlayer == p || p < 1 || p >2){
+		NSLog(@"Player %d is not allowed to make step!",p);
 		return -2;
 	}else if (board[x][y]!=0 ) {
 		NSLog(@"Location %d,%d cant be step on anymore!",x,y);

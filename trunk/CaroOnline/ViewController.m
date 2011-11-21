@@ -7,17 +7,11 @@
 //
 
 #import "ViewController.h"
-#import "TouchImageView.h"
-#import "CaroBoard.h"
-#import "DataSource.h"
-#import "CaroGameLogic.h"
-#import "CaroOfflineViewController.h"
-#import "CaroOnlineViewController.h"
-#import "GameViewController.h"
+
 
 @implementation ViewController
 
-@synthesize testGame;
+@synthesize testGame,testLobby;
 
 - (void)didReceiveMemoryWarning
 {
@@ -31,14 +25,43 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+	[self.view setFrame:[[UIScreen mainScreen] bounds]];
 	
-	testGame = [[GameViewController alloc]initWithRoomName:@"testRoomCaro105"];
-//	[testGame.view setFrame:self.view.frame ];
-//	[self.view addSubview:testGame.view];
-//	[self addChildViewController:testGame];
-
-	//[self.navigationController pushViewController:testGame animated:true];
+	//testGame = [[GameViewController alloc]initWithRoomName:@"testRoomCaro106"];
+	testLobby = [[LobbyViewController alloc]initWithLobbyName:@"testServer"];
+	//ChatViewController * testChat=[[ChatViewController alloc]initWithRoom:@"" delegate:nil];
 	
+//	UIImage* boardImage=[DataSource imageFromPath:[[NSBundle mainBundle] pathForResource:@"Board20x20" ofType:@"png"]];
+//	UIImage* imageX=[DataSource imageFromPath:[[NSBundle mainBundle] pathForResource:@"black-copy" ofType:@"png"]];
+//	UIImage* imageO=[DataSource imageFromPath:[[NSBundle mainBundle] pathForResource:@"white-copy" ofType:@"png"]];
+//	//Load caro online
+//	CaroOnlineViewController * caroOnline = [[CaroOnlineViewController alloc]initWithCaroBoard:boardImage imageX:imageX imageO:imageO roomName:@"testRoomCaro105"];
+//	
+	
+	[self.navigationController pushViewController:testLobby animated:true];
+	[testGame release];
+//	testGame = nil;
+//	//[self.view addSubview:testChat.view];
+	
+//	//Setting for User default
+//	NSUserDefaults *standardUserDefaults = [NSUserDefaults standardUserDefaults];
+//	NSString* chatName=[standardUserDefaults objectForKey:@"chatName"];
+//	if (chatName) {
+//		NSLog(@"Chat name=%@",chatName);
+//	}else{
+//		UIAlertView *alert = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"Chat_Name", nil)  message:NSLocalizedString(@"No_Chat_Name_message", nil) delegate:self cancelButtonTitle:nil otherButtonTitles:@"OK",nil];
+//		[alert show];
+//		
+//	}
+	
+	self.title=@"Quit";
+}
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
+	if (buttonIndex==0) {
+		NSUserDefaults *standardUserDefaults = [NSUserDefaults standardUserDefaults];
+		[standardUserDefaults setObject:@"TVA" forKey:@"chatName"];
+		NSLog(@"Create chatname = %d", [standardUserDefaults synchronize]);
+	}
 }
 
 - (void)viewDidUnload
@@ -55,10 +78,10 @@
 
 - (void)viewDidAppear:(BOOL)animated
 {
-    NSLog(@"viewDidAppear!");
+    //NSLog(@"viewDidAppear!");
 	[super viewDidAppear:animated];
 		
-	[self.navigationController pushViewController:testGame animated:true];
+	//[self.navigationController pushViewController:testGame animated:true];
 	
 }
 

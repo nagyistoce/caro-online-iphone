@@ -10,20 +10,29 @@
 #import "CaroBoard.h"
 #import "CaroGameLogic.h"
 #import "ICTchatConnection.h"
+#import "ChatViewController.h"
 
-@interface CaroOnlineViewController : UIViewController <CaroBoardDelegate,ICTchatConnectionDelegate>{
+
+@interface CaroOnlineViewController : UIViewController <CaroBoardDelegate,ICTchatConnectionDelegate,UIAlertViewDelegate>{
+	UIImage* boardImage;
 	UIImage* imageX; 
 	UIImage* imageO;
 	NSMutableArray* steps;
+	NSMutableArray* messages;
 	NSMutableDictionary * entryDict;
 	float time;
 	Boolean isSending;
 	
+	CaroGameLogic * gameControl;
 	
 	float timeOfLastRequest;
 	
+	NSTimer * timer;
 	UIActivityIndicatorView *sendingIndicator;
 	
+	CaroBoard * board; 
+	
+	NSString * newGameRoomNameAsk;
 }
 
 /** Init a view that can play a caro game on it
@@ -32,8 +41,10 @@
  */
 - (id)initWithCaroBoard:(UIImage*)BoardImage imageX:(UIImage*)imgX imageO:(UIImage*)imgO roomName:(NSString*)room;
 
-@property (nonatomic, retain) CaroBoard * board;
-@property (nonatomic, retain) CaroGameLogic * gameControl;
+/** Reload to play a new  caro game
+ *	@param room=name of room to load Request from.
+ */
+- (void)reloadWithRoomName:(NSString*)room;
 
 /** Side of player 1,2 = x,o
  */
@@ -46,5 +57,9 @@
 /** Room Name
  */
 @property (nonatomic, assign) NSString * roomName;
+
+/** ChatView for push messages;
+ */
+@property (nonatomic, assign) ChatViewController * chatView;
 
 @end
