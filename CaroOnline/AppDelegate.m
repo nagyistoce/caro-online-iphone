@@ -35,6 +35,7 @@
 	self.window.rootViewController = self.navigationController;
 	
 	[self.window makeKeyAndVisible];
+	self.window.backgroundColor=[UIColor redColor];
     return YES;
 }
 

@@ -31,10 +31,11 @@
 	int numRow;
 	int numColumn;
 	NSMutableDictionary * table;
-	id delegate;
+	
 }
 
 @property (nonatomic) Boolean dragable;
+@property (nonatomic,assign)id delegate;
 
 /** Init Touchable Image View with an image
  *	
